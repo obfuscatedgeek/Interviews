@@ -1,0 +1,23 @@
+{
+  "name": "ToDo",
+  "version": "1.0.0",
+  "description": "React Flux",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve"
+  },
+  "author": "Ejaz Bawasa",
+  "license": "MIT",
+  "dependencies": {
+    "fluxxor": "^1.5.3",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-react": "^3.0.1",
+    "react": "^0.13.1",
+    "reactify": "^1.1.0"
+  }
+}
