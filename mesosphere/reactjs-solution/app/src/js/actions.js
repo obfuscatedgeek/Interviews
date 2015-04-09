@@ -2,19 +2,19 @@ var constants = require('./constants');
 
 var actions = {
   addServer: function() {
-    this.dispatch(constants.ADD_SERVER, {id: ++window.SERVERID});
+    this.dispatch(constants.ADD_SERVER, {id: ++window.SERVERID, apps: []});
   }
 
   ,removeServer: function() {
     this.dispatch(constants.REMOVE_SERVER);
   }
 
-  ,removeApp: function() {
-    console.log('we are going to remove app');
+  ,removeApp: function(payload) {
+    this.dispatch(constants.REMOVE_APP, payload);
   }
 
-  ,addApp: function() {
-    console.log('we are going to add some app somewhere');
+  ,addApp: function(payload) {
+    this.dispatch(constants.ADD_APP, _.merge(payload, {pid: new Date().toJSON()}));
   }
 };
 

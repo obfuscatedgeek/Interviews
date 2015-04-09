@@ -23,7 +23,7 @@ window.flux = flux;
 
 
 flux.on('dispatch', function(type, payload) {
-  console.log("Dispatch: ", type, payload);
+  // console.log("Dispatch: ", type, payload);
 });
 
 React.render(<Application flux={flux}/>, document.getElementById('container'));
