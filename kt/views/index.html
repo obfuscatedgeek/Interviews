@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+
+
+        td {
+            vertical-align: top;
+            border: 1px solid #AAA;
+            text-align: center;
+            padding: 10px;
+            background-color: #EBEBEB;
+            width: 400px !important;
+        }
+
+        textarea {
+            width: 90%;
+        }
+
+        iframe {
+            width: 100%;
+            background-color: #FFF;
+            height: 80%;
+            border: 1px solid #AAA;
+        }
+    </style>
+</head>
+<body>
+
+<table width="100%">
+    <tbody>
+    <tr>
+        <td>
+            <h1>I/P Markdown Text</h1>
+
+            <form action="/markdown/save" method="POST">
+                <p>
+                    <textarea name="mdtext" id="mdtext" rows="40">{{md}}</textarea>
+                </p>
+                <p>
+                    <input type="submit"/>
+                </p>
+            </form>
+        </td>
+        <td>
+            <h1>O/P HTML</h1>
+
+            <iframe src="/output" frameborder="0"></iframe>
+        </td>
+        <td>
+            <h1>O/P HTML Text</h1>
+
+            <p>
+                <textarea rows="40" readonly>{{htmlText}}</textarea>
+            </p>
+        </td>
+
+        <td>
+            <h1>JSON</h1>
+            <p>
+                <textarea rows="40" readonly>{{jsonText}}</textarea>
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
