@@ -1,0 +1,26 @@
+S&S creates a record for every user boxes. A box object has the following properties:
+id, created, customer name, address, items[ ]
+
+Write a small application which solves the following problem in node.js:
+Problem description: Send&Store needs a tiny restful API to interact with an array in memory of box objects (example data is provided below).
+example_data.csv ( id, created at, customer name, address, items (separated by “/” ))
+
+1, 033​12​001, Eckart Hubertus, Steindamm 80, Macbook / Clothes
+2, 072​72​001, Albert Sigi, Reeperbahn 153, Macbook / Toys
+3, 121​52​002, Rochus Meinrad, Steindamm 36, Xbox / Book Guide to Hamburg
+4, 020​42​001, Henning Erik, Sternstrasse 125, Book Cooking 10 / Clothes
+5, 121​01​999, Lukas Wessel, Ottenser Hauptstrasse 24, Inline Skates
+6, 060​12​001, Gabi Elias, Reeperbahn 10, Playstation / Controller / Games
+7, 092​02​000, Axel Arndt, Lagerstrasse 11, Flux compensator / Customs / Shoes / Papers 8, 120​82​000, Arthur Justus, Reeperbahn 83, Inline Skates / iPad
+
+a) Implement the endpoints below for:
+GET: /box POST: /box DELETE: /box
+
+b) Implement an endpoint to sort the boxes by street name, date and weight (length of items). So our delivery guys can plan delivery routes easier ;)
+GET: /find
+
+* Optional c)
+Import the example_data.csv as a file system to make the data available for the 4 endpoints already created.
+
+Last step
+Please send us your solution together with run instructions. If you have any further questions please let us know. Otherwise, we look forward to seeing your solution!
